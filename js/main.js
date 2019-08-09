@@ -9,12 +9,11 @@ let dropWidth = 1
 let dropHeight = 10
 let dropSpeed = 3
 let angle = Math.PI / 2
-let color = '#8888cc'
-let xPos = 0
-let yPos = 0
+let color = '#ffffff'
 let scale = 1
+let opacity = 0.2
 
-let image = new Image(canvas.width, canvas.height)
+let backgroundImage = document.querySelector('.backgroundImage')
 
 let depthSlider = document.querySelector('.depthSlider')
 depthSlider.oninput = function() {
@@ -51,34 +50,36 @@ jscolor.onchange = function() {
     color = '#' + this.value
 }
 
-let xSlider = document.querySelector('.xPosSlider')
-xSlider.oninput = function() {
-    xPos = this.value
-}
-
-let ySlider = document.querySelector('.yPosSlider')
-ySlider.oninput = function() {
-    yPos = this.value
-}
-
 let scaleSlider = document.querySelector('.scaleSlider')
 scaleSlider.oninput = function() {
     scale = this.value
+    backgroundImage.height = backgroundImage.naturalHeight * scale
+    backgroundImage.width = backgroundImage.naturalWidth * scale
 }
 
 let urlText = document.querySelector('.urlText')
 let urlBtn = document.querySelector('.urlBtn')
 urlBtn.onclick = function() {
-    image.src = urlText.value
+    backgroundImage.src = urlText.value
+    scale = 1.0
+    scaleSlider.value = 1.0
+    backgroundImage.height = backgroundImage.naturalHeight * scale
+    backgroundImage.width = backgroundImage.naturalWidth * scale
+}
+
+let opacitySlider = document.querySelector('.opacitySlider')
+opacitySlider.oninput = function() {
+    opacity = opacitySlider.value
 }
 
 let drops = []
-let drop = { speed: dropSpeed * (canvas.height / 400), x: Math.random() * canvas.width * 3 - canvas.width, y: 0, depth: calculateDepth(rainDepth) }
-drops.push(drop)
+let startTime = new Date()
 
-setInterval(onTimerTick, 5);
+setInterval(onTimerTick, 5)
 
 function onTimerTick() {
+    let deltaTime = new Date() - startTime
+    startTime = new Date()
     if (counter % 1 === 0) {
         for (let i = 0; i < rainFreq; i++) {
             let drop = { speed: dropSpeed * (canvas.height / 400), x: Math.random() * canvas.width * 3 - canvas.width, y: 0, depth: calculateDepth(rainDepth) }
@@ -86,15 +87,12 @@ function onTimerTick() {
         }
     }
 
-    g.fillStyle = 'rgb(100, 100, 150)'
-    g.fillRect(0, 0, canvas.width, canvas.height)
-    g.scale(scale, scale)
-    g.drawImage(image, canvas.width * (xPos / 100), canvas.height * (yPos / 100))
-    g.scale(1 / scale, 1 / scale)
+    g.clearRect(0, 0, canvas.width, canvas.height)
 
     g.strokeStyle = color
+    g.globalAlpha = opacity
     for (let i = 0; i < drops.length; i++) {
-        let length = drops[i].speed * drops[i].depth
+        let length = drops[i].speed * drops[i].depth * (deltaTime / 4)
         let x = Math.cos(angle) * length
         let y = Math.sin(angle) * length
         drops[i].y += y
@@ -113,6 +111,7 @@ function onTimerTick() {
             drops.splice(i, 1)
         }
     }
+    g.globalAlpha = 1.0
     counter++
 }
 

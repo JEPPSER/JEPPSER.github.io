@@ -1,0 +1,325 @@
+html, body, div, header, nav, main, section, footer {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, main, footer, section {
+    display: block;
+}
+
+html, body {
+    width: 100%;
+    background: #222222;
+}
+
+#wrapper {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+body {
+    background-image: url("pics/dumbbells.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFFFFF;
+    font-family: "Georgia";
+    font-size: 14px;
+    overflow-y: scroll;
+}
+
+nav {
+    padding-top: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    background-color: #222222;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+#thisPage {
+    background-color: #222222;
+}
+
+.news {
+    margin-top: 10px;
+}
+
+.news section {
+    background-color: white;
+    color: black;
+    display: block;
+    float: left;
+    box-shadow: 5px 5px 5px black;
+}
+
+.news aside {
+    overflow-y: auto;
+    color: white;
+    width: 200px;
+    height: 236px;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.news a:link, .news a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.news div {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 10px;
+}
+
+.news img {
+    display: block;
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+}
+
+footer {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+    font-size: 18px;
+}
+
+nav ul {
+    height: 90px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /*background-image: linear-gradient(to left, #222222, darkolivegreen)*/
+    background: darkolivegreen;
+}
+
+nav ul li {
+    float: left;
+    height: 100%;
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    padding: 5px;
+}
+
+nav .navLink {
+    font-family: "Georgia";
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 35px;
+    display: block;
+    height: 100%;
+}
+
+nav .navLink:link, nav .navLink:visited {
+    background-color: transparent;
+    color: white;
+}
+
+nav .navLink:hover, nav .navLink:active {
+    background-color: #222222;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #222;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 15px;
+}
+
+tr {
+    background-color: white;
+    color: black;
+}
+
+th {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+#contact {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    box-shadow: 5px 5px 5px black;
+}
+
+#contact div {
+    padding: 5px;
+}
+
+#contactTitle {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#bilder img {
+    height: 200px;
+}
+
+#bilder {
+    padding: 0px;
+    list-style-type: none;
+}
+
+#bilder li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.greenButton {
+    background-color: darkolivegreen;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 5px black;
+    text-decoration: none;
+}
+
+.greenButton:visited {
+    color: white;
+}
+
+#rekordWrapper {
+    display: inline-block;
+}
+
+#rekordWrapper table {
+    float: left;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+#forumTradar tr {
+    border: 1px solid #222222;
+}
+
+#forumTradar th, #forumTradar td {
+    border: none;
+    text-align: left;
+}
+
+#forumTradar {
+    width: 100%;
+}
+
+#forumTradar a {
+    color: black;
+}
+
+#forumWrapper {
+    width: 100%;
+}
+
+.forumPost {
+    width: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.forumPost div {
+    background-color: darkolivegreen;
+    padding: 10px;
+    color: white;
+}
+
+.forumPost p {
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.postDate {
+    float: right;
+}
+
+#sendWrapper {
+    margin-bottom: 10px;
+}
+
+#sendWrapper input {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        margin: 0px;
+        padding: 0px;
+        width: 100px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        float: none;
+        width: 100px;
+    }
+
+    nav img {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    nav ul {
+        height: 100%;
+        width: 100px;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: darkolivegreen;
+        background-image: none;
+    }
+
+    nav .navLink {
+        padding: 0px;
+        padding-top: 20px;
+        margin: 0px;
+        height: 40px;
+        max-width: 100%;
+        min-width: 100%;
+        display: inline-block;
+    }
+
+    main, footer{
+        margin-left: 100px;
+    }
+}

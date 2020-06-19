@@ -9,43 +9,43 @@ header, main, footer, section {
 
 html, body {
     width: 100%;
-    background: #333333;
+    height: 100%;
+    background: #2c3a36;
 }
 
 #wrapper {
     height: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
-    background-image: url("pics/dumbbells.jpg");
-    background-size: cover;
+    background-image: url("pics/texture4.png");
+    /*background-size: cover;*/
     background-attachment: fixed;
-    color: #FFFFFF;
+    color: black;
     font-family: "Georgia";
     font-size: 14px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 nav {
     padding-top: 0px;
     position: fixed;
-    width: 100%;
+    width: 1000px;
 }
 
 main {
-    background-color: #333333;
+    background: transparent;
     padding-left: 20px;
     padding-top: 110px;
+    padding-bottom: 20px;
 }
 
 #thisPage {
-    background-color: #333333;
-}
-
-a {
-    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .appLink img {
@@ -60,46 +60,6 @@ a {
 .appLink {
     padding: 10px;
     margin-bottom: 10px;
-}
-
-.news {
-    margin-top: 10px;
-}
-
-.news section {
-    background-color: white;
-    color: black;
-    display: block;
-    float: left;
-    box-shadow: 5px 5px 5px black;
-}
-
-.news aside {
-    overflow-y: auto;
-    color: white;
-    width: 200px;
-    height: 236px;
-    background-color: transparent;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.news a:link, .news a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.news div {
-    background-color: darkolivegreen;
-    color: white;
-    padding: 10px;
-}
-
-.news img {
-    display: block;
-    object-fit: cover;
-    height: 200px;
-    width: 300px;
 }
 
 footer {
@@ -118,7 +78,7 @@ nav ul {
     padding: 0px;
     overflow: hidden;
     /*background-image: linear-gradient(to left, #333333, darkolivegreen)*/
-    background: darkolivegreen;
+    background: transparent;
 }
 
 nav ul li {
@@ -127,11 +87,10 @@ nav ul li {
 }
 
 nav img {
-    width: 80px;
-    height: 80px;
+    height: 60px;
     display: block;
     float: left;
-    padding: 5px;
+    padding: 15px;
 }
 
 nav .navLink {
@@ -151,94 +110,13 @@ nav .navLink:link, nav .navLink:visited {
 }
 
 nav .navLink:hover, nav .navLink:active {
-    background-color: #333333;
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
-}
-
-th, td {
-    border: 1px solid #222;
-    padding: 5px;
-}
-
-table {
-    border-collapse: collapse;
-    box-shadow: 5px 5px 5px black;
-    margin-bottom: 15px;
-}
-
-tr {
-    background-color: white;
-    color: black;
-}
-
-th {
-    background-color: darkolivegreen;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: lightgray;
-}
-
-#contact {
-    background-color: white;
-    color: black;
-    display: inline-block;
-    box-shadow: 5px 5px 5px black;
-}
-
-#contact div {
-    padding: 5px;
-}
-
-#contactTitle {
-    background-color: darkolivegreen;
-    color: white;
-    padding: 5px;
-    font-size: 14px;
-}
-
-#bilder img {
-    height: 200px;
-}
-
-#bilder {
-    padding: 0px;
-    list-style-type: none;
-}
-
-#bilder li {
-    display: inline-block;
-    padding: 5px;
-}
-
-.greenButton {
-    background-color: darkolivegreen;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 5px;
-    box-shadow: 5px 5px 5px black;
-    text-decoration: none;
-}
-
-.greenButton:visited {
-    color: white;
-}
-
-#rekordWrapper {
-    display: inline-block;
-}
-
-#rekordWrapper table {
-    float: left;
-    margin-right: 10px;
 }
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 img {

@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.backgroundDiv {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: black;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.slidercontainer, .canvascontainer {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    height: 100%;
+}
+
+.canvascontainer {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    width: 80%;
+}
+
+.slidercontainer {
+    background-color: white;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    width: 20%;
+    height: 100%;
+}
+
+.slidercontainer input {
+    width: 100%;
+}
+
+.slidercontainer div {
+    padding: 5px;
+}
+
+.urlDiv div {
+    padding: 3px;
+}
+
+.urlDiv .urlBtn {
+    width: 25%;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}

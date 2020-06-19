@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Visual Rain Generator</title>
+    <meta name="description" content="This is a simple tool for generating a visual rain effect. This can be used for adding rain to images or gifs well suited for lofi and chill music videos.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="library/jscolor.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slidercontainer">
+                <div>
+                    Rain Color
+                </div>
+                <div>
+                    <input class="jscolor" value="ffffff">
+                </div>
+                <div>
+                    Rain Opacity
+                </div>
+                <div>
+                    <input type="range" class="opacitySlider" value="0.2" min="0" max="1" step="0.05">
+                </div>
+                <div>
+                    Depth
+                </div>
+                <div>
+                    <input type="range" class="depthSlider" value="1" min="0" max="2" step="0.25">
+                </div>
+                <div>
+                    Speed
+                </div>
+                <div>
+                    <input type="range" class="speedSlider" value="3" min="1" max="10" step="0.2">
+                </div>
+                <div>
+                    Frequency
+                </div>
+                <div>
+                    <input type="range" class="freqSlider" value="10" min="0" max="40" step="1">
+                </div>
+                <div>
+                    Width
+                </div>
+                <div>
+                    <input type="range" class="widthSlider" value="3" min="1" max="30" step="1">
+                </div>
+                <div>
+                    Height
+                </div>
+                <div>
+                    <input type="range" class="heightSlider" value="30" min="1" max="30" step="1">
+                </div>
+                <div>
+                    Angle
+                </div>
+                <div>
+                    <input type="range" class="angleSlider" value="1.57" min="0.57" max="2.57" step="0.1">
+                </div>
+                <div>
+                    Angle randomness
+                </div>
+                <div>
+                    <input type="range" class="angleRandomSlider" value="0" min="0" max="8" step="0.1">
+                </div>
+                <div>
+                    Image scale
+                </div>   
+                <div>
+                    <input type="range" class="scaleSlider" value="1" min="0.1" max="3" step="0.1">
+                </div>
+                <div>
+                    Image URL
+                </div>
+                <div class="urlDiv">
+                    <div>
+                        <input type="text" class="urlText">  
+                    </div>
+                    <div>
+                        <button class="urlBtn">OK</button>
+                    </div>
+                </div>
+        </div>
+        <div class="backgroundDiv">
+            <img class="backgroundImage">
+        </div>
+        <div class="canvascontainer">
+            <canvas class="canvas" width="1600" height="900"></canvas>
+        </div>
+    </div>      
+</body>
+
+<script src="js/main.js"></script>
+</html>

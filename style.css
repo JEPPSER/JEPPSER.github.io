@@ -9,7 +9,7 @@ header, main, footer, section {
 
 html, body {
     width: 100%;
-    background: #222222;
+    background: #333333;
 }
 
 #wrapper {
@@ -35,13 +35,31 @@ nav {
 }
 
 main {
-    background-color: #222222;
-    padding: 30px;
-    padding-top: 100px;
+    background-color: #333333;
+    padding-left: 20px;
+    padding-top: 110px;
 }
 
 #thisPage {
-    background-color: #222222;
+    background-color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.appLink img {
+    height: 200px;
+    box-shadow: 7px 7px 7px black;
+}
+
+.appLink h2 {
+    margin: 5px;
+}
+
+.appLink {
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .news {
@@ -99,7 +117,7 @@ nav ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    /*background-image: linear-gradient(to left, #222222, darkolivegreen)*/
+    /*background-image: linear-gradient(to left, #333333, darkolivegreen)*/
     background: darkolivegreen;
 }
 
@@ -133,7 +151,7 @@ nav .navLink:link, nav .navLink:visited {
 }
 
 nav .navLink:hover, nav .navLink:active {
-    background-color: #222222;
+    background-color: #333333;
     color: white;
 }
 
@@ -228,7 +246,7 @@ img {
 }
 
 #forumTradar tr {
-    border: 1px solid #222222;
+    border: 1px solid #333333;
 }
 
 #forumTradar th, #forumTradar td {

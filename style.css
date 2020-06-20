@@ -39,10 +39,24 @@ nav {
 }
 
 main {
+    color: white;
     background: transparent;
     padding-left: 20px;
     padding-top: 110px;
     padding-bottom: 20px;
+}
+
+#about {
+    width: 400px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.randomPic {
+    height: 100px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #thisPage {

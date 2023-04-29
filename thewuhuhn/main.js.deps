@@ -1,10 +1,12 @@
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/.dart_tool/package_config.json
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/entity.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/ground.dart
+file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/particles.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/player.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/game.dart
+file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/graphics/assets.dart
+file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/graphics/brightness_image.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/graphics/camera.dart
-file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/graphics/particles.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/main.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/physics/collision.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/physics/environment.dart

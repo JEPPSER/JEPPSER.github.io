@@ -3,6 +3,10 @@ file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/coin.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/double_jump.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/entity.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/ground.dart
+file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/level/level_generator.dart
+file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/level/level_one.dart
+file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/level/level_three.dart
+file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/level/level_two.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/particles.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/player.dart
 file:///C:/Users/Jespe/Documents/GitHub/thewuhuhn/web/entities/tree.dart

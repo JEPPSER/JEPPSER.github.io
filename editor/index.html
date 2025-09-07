@@ -1,0 +1,144 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Golf game editor</title>
+    <style>
+        :root {
+            --toolbar-height: 56px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+        }
+
+        /* Top toolbar */
+        .toolbar {
+            height: var(--toolbar-height);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 12px;
+            background: linear-gradient(180deg, #f5f7fa, #eef2f7);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+        }
+
+        .toolbar .title {
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .toolbar .spacer {
+            flex: 1;
+        }
+
+        .btn {
+            appearance: none;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            background: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+            font-size: 14px;
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        /* Main container fills remaining viewport under toolbar */
+        .main {
+            height: calc(100vh - var(--toolbar-height));
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        /* left and right halves */
+        .left,
+        .right {
+            flex: 1 1 50%;
+            min-width: 0;
+            /* important so textarea can shrink */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* canvas container keeps the canvas centered and responsive */
+        .canvas-wrap {
+            flex: 1;
+            display: flex;
+            align-items: stretch;
+            justify-content: stretch;
+            box-sizing: border-box;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: block;
+        }
+
+        /* textarea takes full height in right column */
+        textarea {
+            flex: 1;
+            resize: vertical;
+            padding: 12px;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        #export {
+            padding: 20px;
+            border: solid 2px black;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            width: calc(100vw - 200px);
+            height: calc(100vh - 200px);
+            background-color: white
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="export" class="hidden"></div>
+
+    <div class="toolbar" role="toolbar" aria-label="Top toolbar">
+        <div class="title">Golf game editor</div>
+        <button onclick="getCode()">Export</button>
+    </div>
+
+    <main class="main">
+        <section class="left">
+            <div class="canvas-wrap">
+                <canvas id="canvas"></canvas>
+            </div>
+        </section>
+
+        <section class="right">
+            <textarea id="code"></textarea>
+        </section>
+    </main>
+
+    <!-- External JavaScript file: app.js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
